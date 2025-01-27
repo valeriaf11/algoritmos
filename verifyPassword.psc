@@ -8,7 +8,7 @@ Algoritmo verifyPassword
     Leer password_entered;
     
     // Check if the password entered is the same as the correct password
-    Si password_entered = password_Correct Entonces
+    Si password_entered == password_Correct Entonces
         Escribir "The password is correct";
     SiNo
         Escribir "The password is incorrect";
