@@ -1,0 +1,11 @@
+# Solicita al usuario el pago por día y lo convierte a un número flotante
+pago_dia = float(input("Pago por día: "))
+# Solicita al usuario los días trabajados y lo convierte a un número entero
+dias = int(input("Días trabajados: "))
+# Solicita al usuario las horas extra trabajadas y lo convierte a un número entero
+horas_extra = int(input("Horas extra: "))
+# Solicita al usuario las faltas y lo convierte a un número entero
+faltas = int(input("Faltas: "))
+# Calcula el sueldo mensual:
+sueldo = (dias * pago_dia) + (horas_extra * (pago_dia / 8) * 2) - (faltas * pago_dia)
+print(f"Sueldo mensual: {sueldo}")
